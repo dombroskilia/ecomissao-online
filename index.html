@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0d302c">
+<meta name="description" content="EcoMissão: jogo educativo gratuito de restauração ecológica, biodiversidade e proteção dos rios.">
+<title>EcoMissão | Guardiões da Paisagem</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar"><div class="brand"><span class="brand-symbol" aria-hidden="true">✦</span><div><strong>EcoMissão</strong><small>GUARDIÕES DA PAISAGEM</small></div></div><div class="topactions"><span id="roundPill" class="pill">Período 1 / 16</span><span id="moneyPill" class="pill gold">✦ 125 recursos</span><button id="helpBtn" class="iconbutton" aria-label="Instruções do jogo">? Ajuda</button></div></header>
+<main class="shell">
+<section class="intro"><div><p class="eyebrow">UMA AVENTURA SOBRE RESTAURAÇÃO ECOLÓGICA</p><h1>Recupere a floresta.<br><em>Proteja a vida.</em></h1><p>Transforme uma paisagem degradada em um ambiente mais saudável. Cada escolha tem um custo e consequências.</p></div><div class="introbadge">🌱<span>Simulação educativa<br><b>16 períodos</b></span></div></section>
+<div class="game-layout">
+<section class="panel map-panel" aria-label="Mapa interativo"><div class="section-head"><div><h2>🌳 Paisagem em recuperação</h2><p>Escolha uma ação à direita e toque em uma parcela do mapa.</p></div><button id="inspectBtn" class="quiet">⌖ Inspecionar</button></div><div class="canvas-wrap"><canvas id="map" width="960" height="660" aria-label="Mapa com floresta, pastagem, rios, lixo e plantas invasoras"></canvas></div><div class="legend"><span><i class="dot forest"></i> Floresta</span><span><i class="dot young"></i> Mudas</span><span><i class="dot river"></i> Rio</span><span><i class="dot invasive"></i> Invasora</span><span><i class="dot trash"></i> Resíduos</span></div><div class="hintline" id="parcelInfo" aria-live="polite">Toque em uma parcela para conhecer suas condições.</div></section>
+<aside class="aside"><section class="panel stats"><div class="section-head"><div><h2>📊 Saúde da paisagem</h2><p>Alcance todas as metas até o fim.</p></div></div><div id="metrics"></div></section><section class="panel tools"><div class="section-head"><div><h2>🛠️ Intervenções</h2><p>1. Selecione uma ação. 2. Clique no mapa.</p></div></div><div id="actions" class="action-grid"></div><p id="toolHint" class="tool-hint"></p><button id="nextBtn" class="primary">Avançar período <span>→</span></button><p class="buttonhint">As mudas crescem e você recebe +35 recursos.</p></section></aside>
+</div>
+<section class="below"><div class="panel quest"><div class="section-head"><div><h2>🎯 Sua missão</h2><p>Progresso das metas</p></div><strong id="goalCount">0/3</strong></div><div id="goals" class="goal-list"></div></div><div class="panel feedback"><div class="section-head"><div><h2>💬 Diário de campo</h2><p>Suas decisões e suas consequências</p></div></div><div id="message" class="message" role="status" aria-live="polite"></div><div id="history" class="history"></div></div></section>
+<footer>Protótipo educacional • Indicadores fictícios e regras simplificadas — não representam previsões científicas de restauração ecológica. <button id="restartBtn" class="footer-link">Recomeçar</button></footer>
+</main>
+<div id="modal" class="modal-back" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal"><div class="modal-top"><span>🌿 EXPERIÊNCIA EDUCATIVA</span><button id="modalClose" aria-label="Fechar" class="close">×</button></div><h2 id="modalTitle"></h2><div id="modalContent"></div><div id="modalButtons" class="modal-buttons"></div></div></div>
+<script src="game.js" defer></script>
+</body></html>
