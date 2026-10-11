@@ -4,7 +4,7 @@ Jogo educativo de restauração ecológica desenvolvido em **HTML, CSS e JavaScr
 
 ## Abrir no computador 
 
-Abra `index.html` no navegador. O jogo funciona sem servidor, sem Python e sem bibliotecas externas.
+Abra `index.html` no navegador. O jogo funciona sem servidor e sem bibliotecas externas.
 
 ## Controles
 
