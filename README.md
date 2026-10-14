@@ -20,4 +20,4 @@ Esta é uma **simulação educativa fictícia**. Os indicadores e taxas foram si
 
 ## Sobre o código
 
-Uma aplicação web estática precisa enviar HTML/CSS/JavaScript ao navegador. Portanto, o código poderá ser visualizado pelos visitantes. 
+Uma aplicação web estática precisa enviar HTML/CSS/JavaScript ao navegador. 
