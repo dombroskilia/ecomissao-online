@@ -1,4 +1,4 @@
-# EcoMissão Online - Guardiões da Paisagem
+# EcoMissão - Guardiões da Paisagem
 
 Jogo educativo de restauração ecológica desenvolvido em **HTML, CSS e JavaScript**. Joga-se diretamente no navegador, em computadores e celulares. Não há cadastro e o progresso fica salvo no navegador utilizado.
 
